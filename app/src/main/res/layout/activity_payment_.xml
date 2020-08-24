@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/txtPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="166dp"
+            android:layout_marginStart="85dp"
+            android:text="@string/txtPayment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editInputMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="@string/editInputMoney"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="@+id/txtPayment"
+            app:layout_constraintTop_toBottomOf="@+id/txtPayment" />
+
+        <EditText
+            android:id="@+id/editInfoPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="@string/editInfoPayment"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="@+id/editInputMoney"
+            app:layout_constraintTop_toBottomOf="@+id/editInputMoney" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBankCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+
+            android:text="@string/checkBoxBankCard"
+            app:layout_constraintBottom_toTopOf="@+id/checkBoxNumberPhone"
+            app:layout_constraintEnd_toEndOf="@+id/checkBoxNumberPhone" />
+
+        <CheckBox
+            android:id="@+id/checkBoxNumberPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/checkBoxNumberPhone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editInfoPayment" />
+
+        <CheckBox
+            android:id="@+id/checkBoxCashAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/checkBoxCashAddress"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxNumberPhone"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxNumberPhone" />
+
+
+        <Button
+            android:id="@+id/buttonOkPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/buttonOkPayment"
+            app:layout_constraintEnd_toEndOf="@+id/checkBoxCashAddress"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxCashAddress" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        tools:layout_editor_absoluteX="411dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

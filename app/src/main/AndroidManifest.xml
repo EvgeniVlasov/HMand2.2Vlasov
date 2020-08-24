@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".Calendar_Activity"></activity>
+        <activity android:name=".Payment_Activity" />
+        <activity android:name=".EmailDiscribution" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".HomePageActvity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

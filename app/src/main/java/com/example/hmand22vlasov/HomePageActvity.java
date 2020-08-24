@@ -36,8 +36,29 @@ public class HomePageActvity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_open_notes) {
-            Toast.makeText(HomePageActvity.this, "Отркыть записную книжку", Toast.LENGTH_LONG).show();
+            Toast.makeText(HomePageActvity.this, "Открыть записную книжку", Toast.LENGTH_LONG).show();
             Intent intentNotes = new Intent(HomePageActvity.this,MainActivity.class);
+            startActivity(intentNotes);
+            return true;
+
+        }
+        if (id == R.id.action_open_mail) {
+            Toast.makeText(HomePageActvity.this, "Рассылка Эл.письма", Toast.LENGTH_LONG).show();
+            Intent intentNotes = new Intent(HomePageActvity.this,EmailDiscribution.class);
+            startActivity(intentNotes);
+            return true;
+
+        }
+        if (id == R.id.action_open_calendar) {
+            Toast.makeText(HomePageActvity.this, "Календарь задач", Toast.LENGTH_LONG).show();
+            Intent intentNotes = new Intent(HomePageActvity.this,Calendar_Activity.class);
+            startActivity(intentNotes);
+            return true;
+
+        }
+        if (id == R.id.action_open_payment) {
+            Toast.makeText(HomePageActvity.this, "Выбор способа оплаты", Toast.LENGTH_LONG).show();
+            Intent intentNotes = new Intent(HomePageActvity.this,Payment_Activity.class);
             startActivity(intentNotes);
             return true;
 

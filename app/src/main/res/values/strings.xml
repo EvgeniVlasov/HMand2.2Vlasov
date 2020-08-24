@@ -1,5 +1,25 @@
 <resources>
     <string name="app_name">HMand2.2Vlasov</string>
     <string name="btnSave">Сохранить</string>
+    <string name="txtName">Имя пользователя</string>
+    <string name="txtMail">Электронная почта</string>
+    <string name="editName"></string>
+    <string name="editMail"></string>
+    <string name="bottonOK">OK</string>
+    <string name="bottonClear">Очистить</string>
+    <string name="txtComplite"></string>
+    <string name="txtresult">Подписка на рассылку успешно оформлена для пользователя %s на электронный адрес %s</string>
+    <string name="txtPayment">Введите сумму и способ оплаты</string>
+    <string name="editInputMoney">Введите сумму</string>
+    <string name="editInfoPayment">Информация об оплате</string>
+    <string name="checkBoxBankCard">С банковской карты</string>
+    <string name="checkBoxNumberPhone">С мобильного телефона</string>
+    <string name="checkBoxCashAddress">Наличными по адресу</string>
+    <string name="buttonOkPayment">Оплатить</string>
+    <string name="btnStart">Старт задачи</string>
+    <string name="btnFinish">Окончание задачи</string>
+    <string name="calendarStart"></string>
+    <string name="calendarFinish"></string>
+    <string name="btnOk">Ок</string>
 
 </resources>

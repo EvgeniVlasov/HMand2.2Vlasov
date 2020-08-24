@@ -10,18 +10,18 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    EditText editText;
-    Button btnSave;
+    private EditText editText;
+    private Button btnSave;
     private SharedPreferences myNoteSharedPref;
     private static String NOTE_TEXT = "note_text";
-    String noteTxt;
+    private String noteTxt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
-        getDateSharedPref();
+        getDataSharedPref();
     }
 
     private void initView() {
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    private void getDateSharedPref () {
+    private void getDataSharedPref () {
         noteTxt = myNoteSharedPref.getString(NOTE_TEXT,noteTxt);
         editText.setText(noteTxt);
     }

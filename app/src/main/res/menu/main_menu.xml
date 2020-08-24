@@ -10,8 +10,23 @@
         app:showAsAction="never" />
 
     <item
+        android:id="@+id/action_open_mail"
+        android:orderInCategory="100"
+        android:title="Рассылка электронного письма"
+        app:showAsAction="never" />
+    <item
         android:id="@+id/action_open_notes"
         android:orderInCategory="100"
         android:title="Записная книжка"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_open_calendar"
+        android:orderInCategory="100"
+        android:title="Календарь задач"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_open_payment"
+        android:orderInCategory="100"
+        android:title="Способ оплаты"
         app:showAsAction="never" />
 </menu>
